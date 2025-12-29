@@ -38,7 +38,7 @@ def ml_model(X,y):
 model = ml_model(scaled_X,y)
 house_price = model.predict(user_X)[0]
 
-final_price = round(house_price * 100000,2)
+final_price = round(house_price * 1000000,2)
 
 with st.spinner('Predicting House Price'):
   import time
@@ -46,3 +46,4 @@ with st.spinner('Predicting House Price'):
 
 st.success(f'Estimated House Price is: $ {final_price}')
 st.markdown('''**Design and Developed by: Narendra**''')
+
